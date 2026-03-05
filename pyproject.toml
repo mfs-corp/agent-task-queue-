@@ -1,0 +1,12 @@
+[project]
+name = "agent-task-queue"
+version = "1.0.0"
+description = "Redis-backed task queue for multi-agent systems"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "MFS Corp", email = "mfs.corp.biz@gmail.com"}]
+dependencies = ["redis>=4.5.0"]
+
+[project.urls]
+Homepage = "https://github.com/mfs-corp/agent-task-queue-"
