@@ -3,217 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MFS Corp — AI-Powered News & Intelligence</title>
-    <meta name="description" content="Free AI-curated news channels. World news, tech & AI, crypto markets. Updated every 30 minutes.">
-    <meta property="og:title" content="MFS Corp — AI-Powered News & Intelligence">
-    <meta property="og:description" content="Free AI-curated news channels. World news, tech & AI, crypto markets.">
+    <title>MFS Corp News Network — AI-Curated News on Telegram</title>
+    <meta name="description" content="Free AI-curated news channels on Telegram. Pokemon, AI/Tech, World News, and Crypto — updated every 15 minutes from 40+ trusted sources.">
+    <meta property="og:title" content="MFS Corp News Network">
+    <meta property="og:description" content="4 free Telegram channels delivering breaking news every 15 minutes. AI-curated from 40+ sources.">
     <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MFS Corp News Network">
+    <meta name="twitter:description" content="Free AI-curated news on Telegram. Updated every 15 minutes.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            min-height: 100vh;
-        }
-        .hero {
-            text-align: center;
-            padding: 80px 20px 40px;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #00d2ff, #7b2ff7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 16px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #888;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .badge {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 6px 16px;
-            background: rgba(123, 47, 247, 0.15);
-            border: 1px solid rgba(123, 47, 247, 0.3);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #b388ff;
-        }
-        .channels {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .card {
-            background: #141414;
-            border: 1px solid #222;
-            border-radius: 16px;
-            padding: 32px;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: #444;
-        }
-        .card .emoji { font-size: 2.5rem; margin-bottom: 16px; }
-        .card h2 { font-size: 1.4rem; margin-bottom: 8px; color: #fff; }
-        .card p { color: #888; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; }
-        .card .stats { font-size: 0.8rem; color: #666; margin-bottom: 16px; }
-        .card a {
-            display: inline-block;
-            padding: 10px 24px;
-            background: linear-gradient(135deg, #00d2ff, #7b2ff7);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: opacity 0.2s;
-        }
-        .card a:hover { opacity: 0.85; }
-        .features {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-        .features h2 {
-            font-size: 1.8rem;
-            margin-bottom: 32px;
-            color: #fff;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-        }
-        .feature {
-            padding: 20px;
-        }
-        .feature .icon { font-size: 1.8rem; margin-bottom: 8px; }
-        .feature h3 { font-size: 1rem; color: #fff; margin-bottom: 4px; }
-        .feature p { font-size: 0.85rem; color: #888; }
-        .content-section {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-        .content-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 16px;
-            color: #fff;
-        }
-        .content-section p { color: #888; margin-bottom: 24px; }
-        .content-links {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .content-links a {
-            padding: 10px 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-            color: #ccc;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: border-color 0.2s;
-        }
-        .content-links a:hover { border-color: #7b2ff7; color: #fff; }
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #444;
-            font-size: 0.8rem;
-            border-top: 1px solid #1a1a1a;
-            margin-top: 60px;
-        }
-        footer a { color: #666; text-decoration: none; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .hero { text-align: center; padding: 60px 20px 40px; }
+        .hero h1 { font-size: 2.5em; font-weight: 800; background: linear-gradient(135deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+        .hero p { font-size: 1.2em; color: #888; max-width: 600px; margin: 0 auto; }
+        .stats { display: flex; justify-content: center; gap: 40px; padding: 20px; margin: 20px 0; }
+        .stat { text-align: center; }
+        .stat .number { font-size: 2em; font-weight: 700; color: #00d4ff; }
+        .stat .label { font-size: 0.85em; color: #666; }
+        .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .channel { background: #151515; border: 1px solid #222; border-radius: 16px; padding: 32px 24px; text-align: center; transition: transform 0.2s, border-color 0.2s; }
+        .channel:hover { transform: translateY(-4px); border-color: #444; }
+        .channel .emoji { font-size: 3em; margin-bottom: 16px; }
+        .channel h2 { font-size: 1.3em; margin-bottom: 8px; }
+        .channel .desc { color: #888; font-size: 0.95em; margin-bottom: 8px; }
+        .channel .sources { color: #555; font-size: 0.8em; margin-bottom: 20px; }
+        .channel .freq { color: #00d4ff; font-size: 0.85em; font-weight: 600; margin-bottom: 20px; }
+        .btn { display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #00d4ff, #7b2ff7); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1em; transition: opacity 0.2s; }
+        .btn:hover { opacity: 0.9; }
+        .features { max-width: 800px; margin: 40px auto; padding: 40px 20px; }
+        .features h2 { text-align: center; font-size: 1.8em; margin-bottom: 32px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+        .feature { text-align: center; padding: 20px; }
+        .feature .icon { font-size: 2em; margin-bottom: 12px; }
+        .feature h3 { margin-bottom: 8px; }
+        .feature p { color: #888; font-size: 0.9em; }
+        .footer { text-align: center; padding: 40px 20px; color: #444; font-size: 0.85em; border-top: 1px solid #1a1a1a; margin-top: 40px; }
+        .footer a { color: #00d4ff; text-decoration: none; }
+        @media (max-width: 600px) { .hero h1 { font-size: 1.8em; } .stats { flex-wrap: wrap; gap: 20px; } }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>MFS Corp</h1>
-        <p>AI-powered news intelligence. Curated from trusted sources. Delivered to your Telegram. Updated every 30 minutes.</p>
-        <div class="badge">🤖 100% AI-Curated • Zero Human Bias • Always On</div>
+        <h1>MFS Corp News Network</h1>
+        <p>AI-curated breaking news on Telegram. 40+ trusted sources. Updated every 15 minutes. Completely free.</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat"><div class="number">40+</div><div class="label">Sources</div></div>
+        <div class="stat"><div class="number">15min</div><div class="label">Updates</div></div>
+        <div class="stat"><div class="number">4</div><div class="label">Channels</div></div>
+        <div class="stat"><div class="number">24/7</div><div class="label">Coverage</div></div>
     </div>
 
     <div class="channels">
-        <div class="card">
+        <div class="channel">
+            <div class="emoji">⚡</div>
+            <h2>Pokémon News Pulse</h2>
+            <div class="desc">Every Pokémon story from every source. Games, TCG, GO, anime, competitive.</div>
+            <div class="sources">Serebii • PokeBeach • PokeJungle • Dexerto • NintendoLife + 9 more</div>
+            <div class="freq">📡 Every 15 minutes • 14 sources</div>
+            <a href="https://t.me/PokemonNewsPulse" class="btn">Join Channel</a>
+        </div>
+        <div class="channel">
+            <div class="emoji">🤖</div>
+            <h2>AI Tech Pulse Daily</h2>
+            <div class="desc">Breaking AI and tech news. No algorithm, no ads, just signal.</div>
+            <div class="sources">TechCrunch • Ars Technica • The Verge • Wired • HN + 5 more</div>
+            <div class="freq">📡 Every 15 minutes • 10 sources</div>
+            <a href="https://t.me/AITechPulseDaily" class="btn">Join Channel</a>
+        </div>
+        <div class="channel">
             <div class="emoji">🌍</div>
             <h2>The Daily Brief</h2>
-            <p>Breaking world news from BBC, Al Jazeera, NPR, The Guardian, and PBS. Geopolitics, economy, conflict — what matters, as it happens.</p>
-            <div class="stats">6 trusted sources • Updated every 30 min</div>
-            <a href="https://t.me/TheDailyBriefNews">Join on Telegram →</a>
+            <div class="desc">World news that matters. No clickbait, no spin, just what happened.</div>
+            <div class="sources">BBC • Al Jazeera • NPR • The Guardian • PBS NewsHour</div>
+            <div class="freq">📡 Every 15 minutes • 6 sources</div>
+            <a href="https://t.me/TheDailyBriefNews" class="btn">Join Channel</a>
         </div>
-
-        <div class="card">
-            <div class="emoji">🤖</div>
-            <h2>AI Pulse Daily</h2>
-            <p>Tech and AI news from TechCrunch, Ars Technica, Wired, The Verge, MIT Tech Review, and more. Startups, AI breakthroughs, product launches.</p>
-            <div class="stats">10 trusted sources • Updated every 30 min</div>
-            <a href="https://t.me/AITechPulseDaily">Join on Telegram →</a>
-        </div>
-
-        <div class="card">
+        <div class="channel">
             <div class="emoji">₿</div>
             <h2>EZ Market Alpha</h2>
-            <p>Crypto market intelligence from CoinDesk, CoinTelegraph, Decrypt, The Block. Plus: whale alerts, AI sentiment, Fear & Greed index.</p>
-            <div class="stats">6 trusted sources • Real-time alerts</div>
-            <a href="https://t.me/EZMarketAlpha">Join on Telegram →</a>
+            <div class="desc">Real-time crypto market intelligence. No shilling, just signal.</div>
+            <div class="sources">CoinDesk • CoinTelegraph • Decrypt • The Block + 2 more</div>
+            <div class="freq">📡 Every 15 minutes • 6 sources</div>
+            <a href="https://t.me/EZMarketAlpha" class="btn">Join Channel</a>
         </div>
     </div>
 
     <div class="features">
-        <h2>Why MFS Corp?</h2>
+        <h2>Why This Exists</h2>
         <div class="feature-grid">
             <div class="feature">
+                <div class="icon">🔄</div>
+                <h3>Always Fresh</h3>
+                <p>Only stories from the last hour. No stale news cluttering your feed.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🚫</div>
+                <h3>No Duplicates</h3>
+                <p>Title deduplication ensures you see each story exactly once.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">📷</div>
+                <h3>Visual Posts</h3>
+                <p>Every story includes an image and links to the original source.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🤖</div>
+                <h3>AI-Curated</h3>
+                <p>Smart filtering pulls relevant stories from mainstream sources.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">💰</div>
+                <h3>Free Forever</h3>
+                <p>No subscription. No ads. No sponsored content. Just news.</p>
+            </div>
+            <div class="feature">
                 <div class="icon">⚡</div>
-                <h3>Real-Time</h3>
-                <p>News posted within minutes of breaking, not hours</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🎯</div>
-                <h3>Curated</h3>
-                <p>AI filters noise, delivers only what matters</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🔒</div>
-                <h3>No Ads</h3>
-                <p>Clean feed. No sponsored content. No tracking.</p>
-            </div>
-            <div class="feature">
-                <div class="icon">🌐</div>
-                <h3>Multi-Source</h3>
-                <p>22 trusted sources across 3 channels</p>
+                <h3>Instant Delivery</h3>
+                <p>Push notifications via Telegram. Never miss a breaking story.</p>
             </div>
         </div>
     </div>
 
-    <div class="content-section">
-        <h2>Read Our Writing</h2>
-        <p>Deep dives on AI, automation, and building companies with artificial intelligence.</p>
-        <div class="content-links">
-            <a href="https://dev.to/mfs_corp">📝 DEV.to</a>
-            <a href="https://autonomousgrowth.hashnode.dev">📰 Hashnode</a>
-            <a href="https://github.com/mfs-corp">💻 GitHub</a>
-            <a href="https://autonomousgrowth.substack.com">📬 Substack</a>
-        </div>
+    <div class="footer">
+        <p>Built by <a href="https://dev.to/mfs_corp">MFS Corp</a> • <a href="https://autonomousgrowth.hashnode.dev">Blog</a> • <a href="https://github.com/mfs-corp">GitHub</a></p>
+        <p style="margin-top: 8px;">Powered by RSS, Python, and zero cloud costs.</p>
     </div>
-
-    <footer>
-        <p>© 2026 MFS Corp. Built and operated entirely by AI agents.</p>
-        <p style="margin-top: 8px;"><a href="https://github.com/mfs-corp">GitHub</a></p>
-    </footer>
 </body>
 </html>
